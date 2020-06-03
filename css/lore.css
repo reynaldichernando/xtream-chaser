@@ -1,0 +1,35 @@
+.bg-red {
+    background-color: tomato;
+}
+
+.bg-green {
+    background-color: seagreen;
+}
+
+.bg-blue {
+    background-color: steelblue;
+}
+
+.tile {
+    height: 400px;
+}
+
+.tile h1, .tile p {
+    color: white;
+    margin: 10px;
+}
+
+.desc {
+    width: 30%;
+    margin: 80px;
+}
+
+.right {
+    text-align: right;
+    float: right;
+}
+
+.left {
+    text-align: left;
+    float: left;
+}
