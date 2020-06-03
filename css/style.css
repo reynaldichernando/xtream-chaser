@@ -30,17 +30,9 @@ header nav ul li {
     background-color: red;
 }
 
-.jumbotron {
-    height: 800px;
-    background-color: salmon;
-}
-
-.slide-detail {
-    color: white;
-    position: relative;
-    width: 40%;
-    top: 30%;
-    left: 50%;
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {

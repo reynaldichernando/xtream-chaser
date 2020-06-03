@@ -1,0 +1,12 @@
+.jumbotron {
+    height: 850px;
+    background-color: salmon;
+}
+
+.slide-detail {
+    color: white;
+    position: relative;
+    width: 40%;
+    top: 30%;
+    left: 50%;
+}
