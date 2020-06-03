@@ -1,0 +1,46 @@
+.character-spotlight {
+    background-color: teal;
+    height: 850px;
+    position: relative;
+}
+
+.character-bar {
+    background-color: lightblue;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    justify-content: center;
+}
+
+.character-img {
+    margin-right: 100px;
+}
+
+.character-list {
+    position: absolute;
+    height: 150px;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.character-icon {
+    margin: 10px;
+    width: 80px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 10px;
+    transform: skewX(-10deg);
+    overflow: hidden;
+    background-color: silver;
+}
+
+.character-portrait {
+    height: 100px;
+    width: 100px;
+    transform: skewX(+10deg) translateX(-15px);
+}
