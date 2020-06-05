@@ -16,10 +16,20 @@ header nav {
     align-items: center;
 }
 
+header nav ul {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
 header nav ul li {
     color: white;
     display: inline-block;
-    margin: 30px 10px;
+    margin: 10px 10px;
+}
+
+.logo {
+    height: 60px;
 }
 
 #btn-register {
@@ -39,6 +49,16 @@ footer {
     background-color: black;
 }
 
+.name-footer {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.name-footer span{
+    margin-left: 10px;
+}
+
 footer nav {
     display: flex;
     align-items: center;
@@ -53,7 +73,7 @@ footer nav ul {
 
 footer nav ul li {
     color: white;
-    margin: 20px;
+    margin: 10px 20px;
     display: inline-block;
     text-align: center;
 }
