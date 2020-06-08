@@ -19,6 +19,10 @@
     margin-right: 100px;
 }
 
+.character-desc {
+    width: 400px;
+}
+
 .character-list {
     position: absolute;
     height: 150px;
@@ -37,6 +41,10 @@
     transform: skewX(-10deg);
     overflow: hidden;
     background-color: silver;
+}
+
+.character-icon:hover {
+    background-color: red;
 }
 
 .character-portrait {
