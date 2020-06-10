@@ -4,26 +4,25 @@ main{
 }
 
 #title{
-    font-size: 50px;
     text-align: center;
     color: black;
+    margin: 15px;
 }
 
 .container {
-    margin: 0 auto;
+    margin: 30px auto;
     width: 50%;
-    padding: 16px;
     background-color: white;
 }
 
-.container h1 {
+h3 {
     text-align: center;
 }
   
-input[type=text], input[type=password], input[type=date] {
+input[type=text], input[type=password], input[type=date], select{
     width: 100%;
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin: 10px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -33,7 +32,11 @@ input[type=text], input[type=password], input[type=date] {
 input[type=radio]{
     display: inline-block;
     background-color: teal;
-    margin: 10px 0 22px 0;
+    margin: 20px 0;
+}
+
+input[type=checkbox] {
+    margin: 15px 0;
 }
 
 .gender-label {
@@ -49,11 +52,18 @@ hr {
     color: dodgerblue;
 }
 
+.error {
+    color: red;
+    margin-bottom: 20px;
+    display: none;
+    font-size: 0.8rem;
+}
+
 .registerbtn {
     background-color: salmon;
     color: black;
     padding: 16px 20px;
-    margin: 10px 0;
+    margin: 40px 0;
     border: none;
     cursor: pointer;
     width: 100%;

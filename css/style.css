@@ -19,7 +19,7 @@ header nav {
 header nav ul {
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding: 0;
 }
 
 header nav ul li {
