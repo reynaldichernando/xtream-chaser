@@ -75,3 +75,11 @@ hr {
 .registerbtn:hover {
     opacity: 1;
 }
+
+@media only screen and (max-width : 768px) {
+    .container {
+        margin: 30px auto;
+        width: 90%;
+        background-color: white;
+    }
+}

@@ -83,3 +83,70 @@ footer nav ul li {
 footer nav ul li div {
     font-size: 1rem;
 }
+
+@media only screen and (max-width : 768px) {
+    header {
+        background-color: black;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    header nav {
+        display: block;
+        position: relative;
+    }
+    
+    header nav ul {
+        display: block;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        color: white;
+        display: block;
+        margin: 0;
+    }
+    
+    header .logo {
+        height: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #btn-register {
+        position: relative;
+        color: white;
+        padding: 0;
+        right: 0;
+        margin-bottom: 0;
+    }
+
+    #btn-register div {
+        background-color: red;
+        display: block;
+        padding: 15px;
+    }
+
+    .menu {
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    #hamburger-menu {
+        position: absolute;
+        top: 62.5px;
+        right: 25px;
+    }
+
+    #hamburger-menu:hover {
+        cursor: pointer;
+    }
+
+    #hamburger-menu div {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+      }
+}
