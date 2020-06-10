@@ -12,6 +12,7 @@
 
 .tile {
     height: 400px;
+    position: relative;
 }
 
 .tile h1, .tile p {
@@ -20,16 +21,23 @@
 }
 
 .desc {
-    width: 30%;
-    margin: 80px;
+    position: absolute;
+    width: 40%;
+    top: 50px;
 }
 
 .right {
     text-align: right;
-    float: right;
+    right: 5%;
 }
 
 .left {
     text-align: left;
-    float: left;
+    left: 5%;
+}
+
+@media only screen and (max-width : 768px) {
+    .desc {
+        width: 90%;
+    }
 }
