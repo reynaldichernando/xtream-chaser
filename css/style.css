@@ -110,9 +110,8 @@ footer nav ul li div {
     }
     
     header .logo {
-        height: 120px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        height: 160px;
+        padding: 20px;;
     }
     
     #btn-register {
@@ -132,6 +131,7 @@ footer nav ul li div {
     .menu {
         margin-bottom: 20px;
         display: none;
+        padding: 5px;
     }
 
     #hamburger-menu {
