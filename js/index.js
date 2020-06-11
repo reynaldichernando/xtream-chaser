@@ -1,4 +1,8 @@
-let curr = 1;
+class SlideShow {}
+
+// workaround for static index variable
+let slide = new SlideShow();
+slide.curr = 1;
 
 function changeBackground(n){
     $('.bullet').css('background-color', 'white');
@@ -6,35 +10,35 @@ function changeBackground(n){
     switch(n){
         case 1:
             jumbo.css('background-image', "url('./../assets/Background/City.png')");
-            curr = 1;
+            slide.curr = 1;
             break;
         case 2:
             jumbo.css('background-image', "url('./../assets/Background/Undercity.jpg')");
-            curr = 2;
+            slide.curr = 2;
             break;
         case 3:
             jumbo.css('background-image', "url('./../assets/Background/Volcano(edited).jpg')");
-            curr = 3;
+            slide.curr = 3;
             break;
         default:
             break;
     }
 
-    $($('.bullet')[curr-1]).css('background-color', 'lightslategray');
+    $($('.bullet')[slide.curr-1]).css('background-color', 'lightslategray');
 }
 
 function cycleBackground(direction){
     $('.bullet').css('background-color', 'white');
-    if(direction == 'left'){
-        curr -=1;
-        if(curr < 1) curr +=3;
+    if(direction == 'prev'){
+        slide.curr -=1;
+        if(slide.curr < 1) slide.curr +=3;
     }
     else{
-        curr +=1;
-        if(curr > 3) curr -=3;
+        slide.curr +=1;
+        if(slide.curr > 3) slide.curr -=3;
     }
     let jumbo = $('.jumbotron');
-    switch(curr){
+    switch(slide.curr){
         case 1:
             jumbo.css('background-image', "url('./../assets/Background/City.png')");
             break;
@@ -47,9 +51,15 @@ function cycleBackground(direction){
         default:
             break;
     }
-    $($('.bullet')[curr-1]).css('background-color', 'lightslategray');
+    $($('.bullet')[slide.curr-1]).css('background-color', 'lightslategray');
+}
+
+function autoCycle(){
+    cycleBackground('next');
+    setTimeout(autoCycle, 5000);
 }
 
 $(document).ready(function(event){
-    $($('.bullet')[curr-1]).css('background-color', 'lightslategray');
+    $($('.bullet')[slide.curr-1]).css('background-color', 'lightslategray');
+    autoCycle();
 });

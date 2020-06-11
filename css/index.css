@@ -20,10 +20,16 @@
     top: 50%;
     cursor: pointer;
     width: auto;
-    margin: 16px;
+    padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 2rem;
+}
+
+.prev:hover, .next:hover {
+    background-color: white;
+    text-shadow: none;
+    transition: 0.3s;
 }
 
 .prev {
