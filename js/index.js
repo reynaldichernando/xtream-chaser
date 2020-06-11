@@ -61,5 +61,5 @@ function autoCycle(){
 
 $(document).ready(function(event){
     $($('.bullet')[slide.curr-1]).css('background-color', 'white');
-    // autoCycle();
+    autoCycle();
 });
