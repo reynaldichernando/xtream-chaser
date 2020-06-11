@@ -5,30 +5,30 @@ let slide = new SlideShow();
 slide.curr = 1;
 
 function changeBackground(n){
-    $('.bullet').css('background-color', 'white');
+    $('.bullet').css('background-color', 'lightslategray');
     let jumbo = $('.jumbotron');
     switch(n){
         case 1:
-            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/City.png')");
+            jumbo.css('background-image', "url('./assets/Background/City.png')");
             slide.curr = 1;
             break;
         case 2:
-            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Undercity.jpg')");
+            jumbo.css('background-image', "url('./assets/Background/Undercity.jpg')");
             slide.curr = 2;
             break;
         case 3:
-            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Volcano(edited).jpg')");
+            jumbo.css('background-image', "url('./assets/Background/Volcano(edited).jpg')");
             slide.curr = 3;
             break;
         default:
             break;
     }
 
-    $($('.bullet')[slide.curr-1]).css('background-color', 'lightslategray');
+    $($('.bullet')[slide.curr-1]).css('background-color', 'white');
 }
 
 function cycleBackground(direction){
-    $('.bullet').css('background-color', 'white');
+    $('.bullet').css('background-color', 'lightslategray');
     if(direction == 'prev'){
         slide.curr -=1;
         if(slide.curr < 1) slide.curr +=3;
@@ -40,18 +40,18 @@ function cycleBackground(direction){
     let jumbo = $('.jumbotron');
     switch(slide.curr){
         case 1:
-            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/City.png')");
+            jumbo.css('background-image', "url('./assets/Background/City.png')");
             break;
         case 2:
-            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Undercity.jpg')");
+            jumbo.css('background-image', "url('./assets/Background/Undercity.jpg')");
             break;
         case 3:
-            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Volcano(edited).jpg')");
+            jumbo.css('background-image', "url('./assets/Background/Volcano(edited).jpg')");
             break;
         default:
             break;
     }
-    $($('.bullet')[slide.curr-1]).css('background-color', 'lightslategray');
+    $($('.bullet')[slide.curr-1]).css('background-color', 'white');
 }
 
 function autoCycle(){
@@ -60,6 +60,6 @@ function autoCycle(){
 }
 
 $(document).ready(function(event){
-    $($('.bullet')[slide.curr-1]).css('background-color', 'lightslategray');
-    autoCycle();
+    $($('.bullet')[slide.curr-1]).css('background-color', 'white');
+    // autoCycle();
 });
