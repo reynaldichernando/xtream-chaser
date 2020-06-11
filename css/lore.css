@@ -1,29 +1,23 @@
-.bg-red {
-    background-color: tomato;
-}
-
-.bg-green {
-    background-color: seagreen;
-}
-
-.bg-blue {
-    background-color: steelblue;
-}
-
 .tile {
     height: 400px;
     position: relative;
+    text-shadow: 0px 0px 10px black;
 }
 
-.tile h1, .tile p {
+.tile h1, .tile p, .tile div {
     color: white;
     margin: 10px;
+}
+
+.tile h1 {
+    margin-bottom: 20px;
 }
 
 .desc {
     position: absolute;
     width: 40%;
     top: 50px;
+    line-height: 1.2rem;
 }
 
 .right {
@@ -34,6 +28,42 @@
 .left {
     text-align: left;
     left: 5%;
+}
+
+/* chapter 1: nature(edited)
+chapter 2: Sky2
+chapter 3: volcano2
+chapter 4: First floor forest(edited)
+chapter 5: Undercity1 */
+
+#tile-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../assets/Background/City.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tile-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../assets/Background/Nature\(edited\).jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tile-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../assets/Background/Sky\ 2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tile-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../assets/Background/Volcano2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#tile-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../assets/Background/First_Floor_forest1\(edited\).png') no-repeat center center;
+    background-size: cover;
+}
+
+#tile-6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../assets/Background/Undercity.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 @media only screen and (max-width : 768px) {
