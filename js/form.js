@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function(event){
 
         if(eligible){
             alert("Register Success! You will be redirected to main page.");
-            location.href = "./../index.html";
+            location.href = "./index.html";
         }
     });
 });
