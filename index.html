@@ -6,7 +6,9 @@
     <title>Xtream Chaser</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.5.1.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <header>
@@ -33,6 +35,13 @@
                 <div id="release-date">December 10th, 2020</div>
                 <h1 id="title">Xtream Chaser</h1>
                 <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam eveniet deleniti odit asperiores! Porro, hic! Sapiente ut minima quod itaque quo quis, nihil eum. Eligendi ea consequatur minima deleniti beatae vel necessitatibus eveniet excepturi quos ipsa ipsum libero repellat molestiae velit quaerat placeat, tempore quibusdam laborum deserunt! Vero, minima.</p>
+            </div>
+            <a class="prev" onclick="cycleBackground('prev');">&#10094;</a>
+            <a class="next" onclick="cycleBackground('next');">&#10095;</a>
+            <div class="slide-control">
+                <a class="bullet" onclick="changeBackground(1);"></a>
+                <a class="bullet" onclick="changeBackground(2);"></a>
+                <a class="bullet" onclick="changeBackground(3)"></a>
             </div>
         </div>
     </main>
