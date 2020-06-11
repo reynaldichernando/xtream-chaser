@@ -9,15 +9,15 @@ function changeBackground(n){
     let jumbo = $('.jumbotron');
     switch(n){
         case 1:
-            jumbo.css('background-image', "url('./assets/Background/City.png')");
+            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/City.png')");
             slide.curr = 1;
             break;
         case 2:
-            jumbo.css('background-image', "url('./assets/Background/Undercity.jpg')");
+            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Undercity.jpg')");
             slide.curr = 2;
             break;
         case 3:
-            jumbo.css('background-image', "url('./assets/Background/Volcano(edited).jpg')");
+            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Volcano(edited).jpg')");
             slide.curr = 3;
             break;
         default:
@@ -40,13 +40,13 @@ function cycleBackground(direction){
     let jumbo = $('.jumbotron');
     switch(slide.curr){
         case 1:
-            jumbo.css('background-image', "url('./assets/Background/City.png')");
+            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/City.png')");
             break;
         case 2:
-            jumbo.css('background-image', "url('./assets/Background/Undercity.jpg')");
+            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Undercity.jpg')");
             break;
         case 3:
-            jumbo.css('background-image', "url('./assets/Background/Volcano(edited).jpg')");
+            jumbo.css('background-image', "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/Background/Volcano(edited).jpg')");
             break;
         default:
             break;
