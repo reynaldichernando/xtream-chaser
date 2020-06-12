@@ -5,7 +5,7 @@ let slide = new SlideShow();
 slide.curr = 1;
 
 function changeBackground(n){
-    $('.bullet').css('background-color', 'lightslategray');
+    $('.bullet').css('background-color', 'rgba(255,255,255,0.4)');
     let jumbo = $('.jumbotron');
     switch(n){
         case 1:
@@ -28,7 +28,7 @@ function changeBackground(n){
 }
 
 function cycleBackground(direction){
-    $('.bullet').css('background-color', 'lightslategray');
+    $('.bullet').css('background-color', 'rgba(255,255,255,0.4)');
     if(direction == 'prev'){
         slide.curr -=1;
         if(slide.curr < 1) slide.curr +=3;
