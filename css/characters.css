@@ -57,7 +57,7 @@
     transform: skewX(+10deg) translateX(-28px);
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 799px) {
     .character-spotlight {
         background-color: teal;
         height: 850px;

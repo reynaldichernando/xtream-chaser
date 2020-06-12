@@ -76,7 +76,7 @@ hr {
     opacity: 1;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 799px) {
     .container {
         margin: 30px auto;
         width: 90%;

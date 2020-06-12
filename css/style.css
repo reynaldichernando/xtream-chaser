@@ -85,7 +85,7 @@ footer nav ul li div {
     margin: 10px 20px;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 799px) {
     header {
         background-color: black;
         width: 100%;
